@@ -77,7 +77,7 @@ namespace ProjetoTopayRH
                         Console.Write("Email: ");
                         string email = Console.ReadLine();
 
-                        Console.WriteLine("Cargo: ");
+                        Console.Write("Cargo: ");
                         string cargo = Console.ReadLine();
 
                         Console.Write("Senha: ");
@@ -106,6 +106,9 @@ namespace ProjetoTopayRH
                             Console.WriteLine("Email: " + colaborador.Email);
                             Console.WriteLine("Cargo: " + colaborador.Cargo);
                             Thread.Sleep(2000); // Pausa de 2 segundos
+                            Console.WriteLine("Pressione algum botão para continuar:");
+                            Console.ReadLine();
+
                         }
                         break;
 
@@ -157,6 +160,9 @@ namespace ProjetoTopayRH
 
                             Console.WriteLine(folhaPagamento.ToString());
                             Thread.Sleep(6000);
+
+                            Console.WriteLine("Pressione algum botão para continuar:");
+                            Console.ReadLine();
                         }
                         else
                         {
